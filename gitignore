@@ -1,0 +1,39 @@
+# ── Model weights (too large for GitHub) ──
+reward_model/
+reward_model_baseline/
+reward_model_v2/
+*.pt
+*.bin
+*.safetensors
+
+# ── HuggingFace dataset cache ──
+rlhf_data/hf_dataset/
+rlhf_data_test/
+hf_dataset/
+
+# ── Checkpoints ──
+rlhf_data/checkpoint_*.json
+checkpoint_*.json
+
+# ── Archives ──
+*.zip
+*.tar.gz
+*.rar
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.env
+
+# ── Colab / Jupyter ──
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── OS ──
+.DS_Store
+Thumbs.db
