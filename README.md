@@ -1,7 +1,5 @@
 # Incorporating Rewrite Feedback in RLHF
 
-> Research project — IIT Bombay, Human-Centered AI Lab | Jan–May 2025
-
 ## Overview
 
 Standard RLHF trains reward models on binary preference labels: annotators say "Response A is better than Response B" with no explanation of *why*. This project investigates whether augmenting preference pairs with **natural language rewrite feedback** — explicit instructions explaining what is wrong and how to fix it — produces a richer supervisory signal for reward model training.
@@ -170,7 +168,6 @@ Training loss: `L = -log(sigmoid(r_chosen - r_rejected))` (Bradley-Terry)
 
 - Results are preliminary (100 samples, small validation set)
 - OOD generalization is partial — creative writing domain is weak due to low training coverage
-- Val accuracy of 1.0 is an artifact of the small validation set (9 samples), not true generalization
 
 ## Next Steps
 
@@ -188,4 +185,4 @@ Training loss: `L = -log(sigmoid(r_chosen - r_rejected))` (Bradley-Terry)
 
 ## Author
 
-Ryakam Sai Sri Laxmi — IIT Bombay, B.Tech Computer Science
+Ryakam Sai Sri Laxmi — IIT Bombay
