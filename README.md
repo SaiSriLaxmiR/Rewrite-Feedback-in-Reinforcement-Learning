@@ -59,7 +59,8 @@ Scalar Reward Model
 rlhf-rewrite-feedback/
 ├── synthetic_data_gen.py     # Stage 1: data generation via Groq API
 ├── reward_model.py           # Stage 2: DeBERTa reward model training
-├── runner.py           # Step-by-step execution script
+├── baseline_vs_rewrite.ipynb # Notebook with results
+├── baseline_vs_rewrite.py    # Step-by-step execution script
 ├── rlhf_dataset.json         # 100-sample synthetic dataset
 ├── rlhf_dataset.csv          # Same dataset in CSV format
 └── README.md
