@@ -22,7 +22,7 @@ Trained on **100 synthetic samples**, the rewrite-augmented reward model achieve
 |--------|-------------|--------------|-------------|
 | How a refrigerator works | 0.2290 | 0.0590 | +288% |
 | Capital of Australia | 0.1473 | 0.0707 | +108% |
-| Haiku about ML | -0.0601 | 0.0149 | ✗ (low domain coverage) |
+| Haiku about ML | -0.0601 | 0.0149 | (low domain coverage) |
 
 **Rewrite model wins 5/6 cases. Average gap 3.9× larger than baseline.**
 
@@ -59,7 +59,7 @@ Scalar Reward Model
 rlhf-rewrite-feedback/
 ├── synthetic_data_gen.py     # Stage 1: data generation via Groq API
 ├── reward_model.py           # Stage 2: DeBERTa reward model training
-├── colab_runner.py           # Step-by-step Colab execution script
+├── runner.py           # Step-by-step execution script
 ├── rlhf_dataset.json         # 100-sample synthetic dataset
 ├── rlhf_dataset.csv          # Same dataset in CSV format
 └── README.md
